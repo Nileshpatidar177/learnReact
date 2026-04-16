@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+/* 🌌 Background */
+.parent {
+  min-height: 100vh;
+  width: 100%;
+  padding: 30px;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+
+  /* ✅ GRID instead of flex */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+/* 💎 Card */
+.card {
+  padding: 18px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #fff;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+  transition: all 0.3s ease;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* ✨ Hover */
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.6);
+}
+
+/* 🔝 Top */
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  object-fit: contain;
+  background: #fff;
+  padding: 4px;
+}
+
+/* 🔘 Button */
+.top button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: #6366f1;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.top button:hover {
+  background: #4f46e5;
+}
+
+/* 🧠 Center */
+.center {
+  margin-top: 15px;
+}
+
+.center h3 {
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+.center h2 {
+  font-size: 18px;
+  margin: 6px 0;
+}
+
+.center div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.center h4 {
+  font-size: 11px;
+  padding: 4px 8px;
+  background: rgba(255,255,255,0.12);
+  border-radius: 6px;
+}
+
+/* 🔻 Bottom */
+.bottom {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom span {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.bottom button {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.bottom button:hover {
+  transform: scale(1.05);
+}
